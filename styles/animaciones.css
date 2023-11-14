@@ -1,0 +1,110 @@
+body{
+    background-image: url(/assets/img/fondos-para-páginas-web-6.jpg);
+}
+
+
+/* textos */
+h1{
+    font-size: 75px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffffff, #ff0000, #ffffff, #d400ff, #6aff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradient 8s ease-in-out infinite;
+    background-color: black;
+    
+  }
+  
+  @keyframes gradient{
+    0% {
+            background-position: 0% 50%;
+    
+        }
+        
+        50% {
+            background-position: 100% 50%;
+    
+        }
+        
+        100% {
+            background-position: 0% 50%;
+    
+        }
+    }
+
+    h4{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 400;
+        
+    }
+/* textos */
+
+
+
+
+
+
+
+
+
+/* cajas */
+.cajita{
+    margin: 0 25px;
+    padding: 20px;
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+/* cajas */
+
+
+/* Animaciones para las cajas */
+
+@keyframes ejemplo{
+    from{
+        left: 0px;
+        background-color: red;
+    }
+    
+    to{
+
+        left: 250px;
+        background-color: blueviolet;
+    }
+}
+
+
+
+.linear{
+    animation: ejemplo 2s linear  infinite alternate;
+
+}
+.ease{
+    animation: ejemplo 2s ease infinite alternate;
+}
+.ease-in{
+    animation: ejemplo 2s ease-in infinite alternate;
+}
+.ease-in-out{
+    animation: ejemplo 2s ease-in-out infinite alternate;
+}
+.ease-out{
+    animation: ejemplo 2s ease-out infinite alternate;
+}
+
+/* Animaciones para las cajas */
+
+/* mediaquerie */
+
+@media (max-width: 480px) {
+
+    h1{
+        font-size: 50px;
+    }
+    
+}
